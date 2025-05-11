@@ -10,8 +10,8 @@ public class Main {
         DataPreprocessing.preprocess();
        
         // Train and Evaluate J48
-        Instances trainDataJ48 = ModelTrainer.trainJ48("C:\\Users\\admin\\eclipse-workspace\\DataMining-FinalProject\\src\\Data\\cleaned_data.arff");
-        ModelEvaluator.evaluateJ48(trainDataJ48);
+//        Instances trainDataJ48 = ModelTrainer.trainJ48("C:\\Users\\admin\\eclipse-workspace\\DataMining-FinalProject\\src\\Data\\cleaned_data.arff");
+//        ModelEvaluator.evaluateJ48(trainDataJ48);
         
         Instances trainDataImproved = ModelTrainer.trainJ48WithNaiveBayesImprovement("C:\\Users\\admin\\eclipse-workspace\\DataMining-FinalProject\\src\\Data\\cleaned_data.arff");
         ModelEvaluator.evaluateJ48(trainDataImproved); 
